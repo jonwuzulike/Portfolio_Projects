@@ -1,0 +1,11 @@
+body {
+  
+    height: 100%;
+}
+.bg {
+    background-image: url('https://cdn.hipwallpaper.com/i/9/85/Wna7Dx.jpeg');
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
