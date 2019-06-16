@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE  hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+<class name="com.ers.models.User" table="users">
+<id name="id" type="int" column="user_id"></id>
+<property name="first" type="string" column="first_name"></property>
+<property name="last" type="string" column="last_name"></property>
+<property name="email" type="string" column="email"></property> 
+<property name="userTypeId" type="int" column="user_type_id"></property>
+</class>
+
+</hibernate-mapping>
