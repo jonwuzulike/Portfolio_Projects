@@ -10,7 +10,9 @@ public class Main {
 //		User ur = dao.getUserById(3);
 //		System.out.println(ur);
 		
-		dao.getAllUsers();
+//		dao.getAllUsers();
+		
+		dao.userLogin("dcraig@m6.com", "dc123");
 	}
 
 }
