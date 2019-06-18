@@ -4,6 +4,10 @@ import java.io.Serializable;
 
 public class Reimbursement implements Serializable {
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 975019376274486932L;
 	private int rId;
 	private String name;
 	private double amount;

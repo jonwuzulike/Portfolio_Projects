@@ -6,6 +6,11 @@ import java.math.BigDecimal;
 
 public class User implements Serializable {
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -8360003932966450765L;
+	
 	private int id;
 	private String first;
 	private String last;

@@ -1,6 +1,5 @@
 package com.ers.dao;
 
-import java.math.BigDecimal;
 import java.util.ArrayList;
 
 import com.ers.models.User;

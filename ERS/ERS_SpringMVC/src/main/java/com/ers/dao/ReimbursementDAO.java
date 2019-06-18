@@ -13,7 +13,7 @@ public interface ReimbursementDAO {
 	public ArrayList<Reimbursement> getByUser(int id);
 	
 	//Get a single reimbursement.
-	public Reimbursement getOne(int id);
+	//public Reimbursement getOne(int id);
 	
 
 }
