@@ -2,12 +2,33 @@
 
 
 
-  <body>
-    <div class="bg">
-      <h1>Welcome Home {{ user.first }}</h1>
-    </div>
+<body>
+  <div class="bg">
+    <h1>Welcome Home {{ user.first }}</h1>
+  </div>
 
-<div *ngIf="user">{{ user.name }}</div>
+  <div *ngIf="user">
+    <table>
+      <thead>
+        <td>ID</td>
+        <td>Name</td>
+        <td>Amount</td>
+        <td>Date Submitted</td>
+        <td>Status</td>
+        <td>Type</td>
+      </thead>
+      <tr>
+        <td>{{ reim[0].rId }}</td>
+        <td>{{ reim[0].name }}</td>
+        <td>{{ reim[0].amount }}</td>
+        <td>{{ reim[0].date }}</td>
+        <td>{{ reim[0].rStatusId }}</td>
+        <td>{{ reim[0].rTypeId }}</td>
+      </tr>
 
-  </body>
+    </table>
+
+  </div>
+</body>
+
 </html>

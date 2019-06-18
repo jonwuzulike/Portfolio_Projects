@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { UserServiceService } from '../user-service.service';
+import { UserServiceService } from '../services/user-service.service';
 
 @Component({
   selector: 'app-home',
@@ -31,9 +31,12 @@ export class HomeComponent implements OnInit {
         this.user = data;
         console.log(this.user);
         this.service.setCurrentUser(this.user);
-        this.service.getCurrentUser();
         if (this.user !== null || this.user !== undefined) {
+         if (this.user.userTypeId === 1) {
           this.router.navigate(["/employee"]);
+         } else {
+          this.router.navigate(["/manager"]);
+         }
         }
       }
 

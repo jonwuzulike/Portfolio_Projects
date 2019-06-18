@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ReimbursementService } from '../services/reimbursement.service';
+import { UserServiceService } from '../services/user-service.service';
 
 @Component({
   selector: 'app-manager',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ManagerComponent implements OnInit {
 
-  constructor() { }
+  constructor(private service: UserServiceService, private rService: ReimbursementService) { }
 
+  user: User;
   ngOnInit() {
+
+    this.user = this.service.getCurrentUser();
+    this.rService.getAll().subscribe(
+      (data) => {
+        console.log(data);
+      }
+    )
   }
 
 }

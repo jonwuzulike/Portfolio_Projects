@@ -29,7 +29,7 @@ first_name VARCHAR(20) NOT NULL,
 last_name VARCHAR(20) NOT NULL,
 email VARCHAR(40) NOT NULL UNIQUE,
 password VARCHAR(20) NOT NULL,
-user_type_id NUMBER DEFAULT 1
+User.c NUMBER DEFAULT 1
 );
 
 alter table users
