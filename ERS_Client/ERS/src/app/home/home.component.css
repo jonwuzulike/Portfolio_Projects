@@ -4,3 +4,7 @@ input {
 body {
     background-color: rgb(84, 128, 131);
 }
+
+#login {
+visibility: hidden;
+}

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { User } from '../models/user';
+import { UserServiceService } from '../user-service.service';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-employee',
@@ -9,11 +11,13 @@ import { User } from '../models/user';
 export class EmployeeComponent implements OnInit {
 
   user: User;
-  constructor() { 
+  constructor(private service: UserServiceService, private router: Router) {
+
   }
 
   ngOnInit() {
- 
+ this.user=  this.service.getCurrentUser();
   }
+
 
 }

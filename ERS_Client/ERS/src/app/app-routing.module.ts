@@ -5,9 +5,10 @@ import { EmployeeComponent } from './employee/employee.component';
 import { ManagerComponent } from './manager/manager.component';
 
 const routes: Routes = [
-{ path: "home" , component: HomeComponent},
-{path: "employee", component:EmployeeComponent},
-{path: "manager", component: ManagerComponent}
+  { path: "", redirectTo: "/home" , pathMatch: "full"},
+  { path: "home", component: HomeComponent },
+  { path: "employee", component: EmployeeComponent },
+  { path: "manager", component: ManagerComponent }
 ];
 
 @NgModule({

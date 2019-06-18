@@ -1,6 +1,7 @@
-export class User {
-    id: Number
+interface User {
+    id: Number;
     first: String;
     last: String;
-    email: String;
+    email: String
+    userTypeId: Number;
 }
