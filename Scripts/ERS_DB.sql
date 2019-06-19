@@ -98,7 +98,8 @@ SELECT reimbursement_id_seq.nextval INTO :new.r_id FROM DUAL;
 END IF;
 END;
 
-
+select * from users;
+select * from reimbursement;
 
 
 --DML Add data
@@ -153,10 +154,21 @@ insert into users
 values
 ('Pierce', 'Bruncson', 'pbrunson@m6.com', 'pb123');
 
+--Pierce
 insert into reimbursement
 (amount, time_submitted, r_status_id, r_type_id, user_id, name)
 values
 (2000.60, '01-APR-67', 1, 4, 3, 'Weapons');
+
+insert into reimbursement
+(amount, time_submitted, r_status_id, r_type_id, user_id, name)
+values
+(5000, '15-DEC-69', 3, 3, 3, 'Mission Lodging');
+insert into reimbursement
+(amount, time_submitted, r_status_id, r_type_id, user_id, name)
+values
+(200, '23-NOV-68', 3, 1, 3, 'Mission Snacks');
+--Sean
 insert into reimbursement
 (amount, time_submitted, r_status_id, r_type_id, user_id, name)
 values
@@ -165,11 +177,20 @@ values
 insert into reimbursement
 (amount, time_submitted, r_status_id, r_type_id, user_id, name)
 values
+(4500, '05-JAN-96', 3,4, 4, 'Equipment from Q');
+
+--Daniel
+insert into reimbursement
+(amount, time_submitted, r_status_id, r_type_id, user_id, name)
+values
 (342.60, '15-JUL-08', 1, 2, 2, 'Grand Hotel');
 
+insert into reimbursement
+(amount, time_submitted, r_status_id, r_type_id, user_id, name)
+values
+(600, '25-AUG-10', 3, 1, 2, 'Grand Hotel Luncheon');
 
-delete from reimbursement
-where r_id = 2;
-
-
-select * from reimbursement;
+insert into reimbursement
+(amount, time_submitted, r_status_id, r_type_id, user_id, name)
+values
+(5000, '28-FEB-12', 2, 4, 2, 'Casino Funds');
