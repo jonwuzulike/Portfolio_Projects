@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+    background-color: black;
+}
+
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 33px;
+    color: white;
+    text-align: center;
+}
+
+p {
+    color: white;
+    font-size: 33px;
+    font-weight: 300;
+}
+
+label {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 23px;
+}

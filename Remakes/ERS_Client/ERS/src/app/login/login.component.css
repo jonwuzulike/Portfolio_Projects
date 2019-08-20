@@ -1,0 +1,23 @@
+div {
+    background-color: red;
+    margin: auto;
+    width: 50%;
+    height: 100%;
+    border: 4px yellow solid;
+    border-radius: 10px
+}
+
+input {
+    border: black 5px solid;
+    margin-bottom: 10px;
+
+}
+
+button {
+    border: black 5px solid;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    width: 30%;
+    margin-left: 30%;
+
+}

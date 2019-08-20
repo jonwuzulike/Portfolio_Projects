@@ -1,0 +1,14 @@
+{
+  "name": "ers_client",
+  "version": "1.0.0",
+  "description": "Remakes the ERS Client project",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "j.onwuzulike",
+  "license": "ISC",
+  "dependencies": {
+    "@angular/cli": "^8.2.2"
+  }
+}
