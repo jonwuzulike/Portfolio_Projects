@@ -1,25 +1,4 @@
-Skip to content
- 
-Search or jump to…
 
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@jonwuzulike 
-Learn Git and GitHub without any code!
-Using the Hello World guide, you’ll start a branch, write comments, and open a pull request.
-
- 
-0
-0 0 jonwuzulike/Portfolio_Projects
- Code  Issues 0  Pull requests 1  Projects 0  Wiki  Security  Insights  Settings
-Portfolio_Projects/.gitignore
-@jonwuzulike jonwuzulike Created a base .gitignore
-09d5707 15 minutes ago
-72 lines (57 sloc)  911 Bytes
-    
 # Compiled class file
 *.class
 
@@ -91,15 +70,4 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
-© 2019 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
+
